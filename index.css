@@ -1,0 +1,39 @@
+.blink {
+  color: blue;
+  background-color: bisque;
+  font-weight: bolder;
+  height: 100px;
+  width: auto;
+  text-align: center;
+ margin-top: 30px;
+ padding-top: 50px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.blink{
+    animation:  blink 1s  infinite;
+}
+.slide{
+    animation: slide 2s ease-in-out;
+}
